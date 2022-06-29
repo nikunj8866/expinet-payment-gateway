@@ -1,0 +1,79 @@
+#wc-expinet-cc-form .help_info {
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: right;
+    cursor: default;
+    margin-left: 10px !important;
+    display: inline-block;
+    position: relative;
+}
+#wc-expinet-cc-form .help_info p {
+    display: none;
+    text-align: left;
+    background-color: #3293af;
+    padding: 20px;
+    width: 330px;
+    position: absolute;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+    /* right: 10px; */
+    left: -10px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 1;
+    cursor: text;
+}
+#wc-expinet-cc-form .help_info p:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-bottom-color: #3293af;
+    /* right: 10px; */
+    top: -12px;
+    left: 10px;
+}
+
+#wc-expinet-cc-form input[name=card_number]{
+    margin-bottom: 10px !important;
+}
+
+#wc-expinet-cc-form .card_thumbs img.active {
+    border: 2px solid #f18544;
+}
+
+#wc-expinet-cc-form .form-row{
+    margin-bottom: 10px !important;
+    padding-bottom: 0px !important;
+}
+#wc-expinet-cc-form .pd-0 .col-sm-6:first-child{
+    padding-left: 0px;
+}
+#wc-expinet-cc-form .pd-0 .col-sm-6:last-child{
+    padding-right: 0px;
+}
+
+.checkout.woocommerce-checkout #wc-expinet-cc-form .form-row label span{
+    margin-left: 0px;
+}
+@media only screen and (max-width: 767px) {
+    #wc-expinet-cc-form .pd-0 .col-sm-6:first-child{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #wc-expinet-cc-form .pd-0 .col-sm-6:last-child{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .woocommerce-checkout #payment ul.payment_methods {
+        padding: 0 !important;
+    }
+    #add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row{
+        padding: 0 10px !important;
+    }
+}
